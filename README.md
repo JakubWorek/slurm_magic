@@ -1,15 +1,16 @@
-P4: SLURM Magic — Jupyter Notebook Presentation
+# P4: SLURM Magic — Jupyter Notebook Presentation
+## Dawid Zawiślak, Jakub Worek
 
-Contents:
+### Contents:
 - `slurm_student_lab.ipynb` — interactive lab for students using the local SLURM magics.
 - `slurm_magic_presentation.ipynb` — shorter presentation-focused notebook.
 - `slurm_magic.py` — local copy of the magic commands, patched to avoid the `squeue` tuple bug and to print cleaner output.
 - `requirements.txt` — minimal Python packages for the notebook.
 - `setup_env.sh` — creates a virtualenv and installs requirements.
 
-Setup
+### Setup
 
-Run:
+#### Run:
 
 ```
 cd p4_slurm_notebook
@@ -18,7 +19,7 @@ source venv/bin/activate
 jupyter lab   # or jupyter notebook
 ```
 
-Notes
+### Notes
 
 - The lab notebook contains example `sbatch`, `srun`, and `salloc` snippets. On a non-SLURM system these commands will fail — they are instructional. On the cluster, run them from within the notebook or convert the presentation notebook to slides using `jupyter nbconvert --to slides slurm_magic_presentation.ipynb`.
 - If you want a live slide view inside the notebook, install RISE (`pip install RISE`) after activating the env.
